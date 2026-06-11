@@ -11,10 +11,6 @@
 
 #define PORT 53
 
-void chat(char msg[1023]){
-   
-}
-
 int main(void){
     system("clear");
 
