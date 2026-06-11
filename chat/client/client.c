@@ -19,6 +19,7 @@ int main(void){
     system("clear");
 
     char msg[1023];
+    char ip[20];
 
     int client_fd, status, valread;
     struct sockaddr_in serv_addr;
@@ -32,7 +33,7 @@ int main(void){
     serv_addr.sin_family = IPV4;
     serv_addr.sin_port = htons(PORT);
 
-    if(inet_pton(IPV4, "127.0.0.1", &serv_addr.sin_addr) <= 0){
+    if(inet_pton(IPV4, ip, &serv_addr.sin_addr) <= 0){
         perror("ERROR: Failed to init intet_pton");
         exit(EXIT_FAILURE);
     }
