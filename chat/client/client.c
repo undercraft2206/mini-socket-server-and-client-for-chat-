@@ -58,11 +58,6 @@ int main(void){
         memset(buffer, 0, 1024);
     }
 
-//    send(client_fd, msg, strlen(msg), 0);
-//    printf("\nMSG send !\n");
-//    valread = read(client_fd, buffer, 1024 - 1);
-//    printf("%s", buffer);
-
     close(client_fd);    
     return 0;
 }
